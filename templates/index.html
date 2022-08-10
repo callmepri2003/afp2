@@ -1,0 +1,1035 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Pri Kundnani</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/logo.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+  <!-- Icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio - v3.7.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <nav>
+      <div class="menu-icon">
+         <i class="fa fa-bars fa-2x"></i>
+      </div>
+      <div class="logo">
+          Get in touch
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-instagram"></a>
+      </div>
+      <div class="socials">
+        
+      </div>
+      <div class="menu">
+         <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#blog">Blog</a></li>
+         </ul>
+      </div>
+   </nav>
+    </div>
+      <!-- <br> -->
+      <!-- <div class="profile">
+        <h1 class="text-light"><a href="index.html">Get in touch</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav> -->
+      <!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1 style="color: #A9A9A9;"><span style="color: white;">Pri</span>yanshu Kundnani</h1>
+      <p>I'm a <span class="typed" data-typed-items="Designer, Front End Developer, Freelancer, Back End Developer"></span></p>
+    </div>
+    <script>
+      var SimplybookWidget = function (options) {
+            this.options = {
+                // common options
+                'widget_type': 'iframe',
+                'widget_user_class': '',
+                'theme': 'default',
+                'theme_settings': {},
+                'app_config': {},
+                'timeline': null,
+                'datepicker': null,
+                'url': '',
+                // iframe widget options
+                'iframe_postpone': false,
+                // button widget options
+                'button_position': 'right',
+                'button_position_offset': 'auto',
+                'button_background_color': '#06acee',
+                'button_text_color': '#ffffff',
+                'button_title': 'Book Now',
+                'button_preload': true,
+                'button_custom_id': null,
+                'navigate': 'book'
+            };
+            this.modalsPositions = {};
+            this.name = 'widget_' + Math.random();
+            this.frame = null;
+
+            for (var name in options) {
+                if (!options.hasOwnProperty(name)) {
+                    continue;
+                }
+                this.options[name] = options[name];
+            }
+
+            this.init();
+        };
+
+        SimplybookWidget.prototype.init = function () {
+            document.cookie = 'sb_widget=1';
+
+            if (!this.options.postpone) {
+                switch (this.options.widget_type) {
+                    case 'iframe':
+                        this.displayIframe();
+                        break;
+
+                    case 'reviews':
+                        this.options.navigate = 'reviews';
+                        this.displayIframe();
+                        break;
+
+                    case 'button':
+                        this.addButton();
+                        break;
+
+                    case 'contact-button':
+                        this.addContactButton();
+                        break;
+                }
+            }
+        };
+
+        SimplybookWidget.prototype.onReceiveMessage = function (message) {
+            if (typeof message.data === 'object') {
+                if (!this.frame || message.source !== this.frame.contentWindow) {
+                    return;
+                }
+                switch (message.data.event) {
+                    case 'appReady':
+                        this.setSettings(message.data);
+                        break;
+                    case 'updateWidgetSize':
+                        this.updateWidgetSize(message.data);
+                        break;
+                    case 'closeWidget':
+                        this.closePopup();
+                        break;
+                    case 'modalShown':
+                        if (this.options.widget_type === 'iframe') {
+                            this.changeModalPosition(message.data.listener_id);
+                        }
+                        break;
+                    case 'modalShow':
+                        if (this.options.widget_type === 'iframe') {
+                            this.saveModalPosition(message.data.listener_id);
+                        }
+                        break;
+                    case 'modalHidden':
+                        if (this.options.widget_type === 'iframe') {
+                            this.updatePositionAfterModal(message.data.listener_id);
+                        }
+                        break;
+                    case 'stepChanged':
+                    case 'scrollTo':
+                        if (this.options.widget_type === 'iframe') {
+                            this.scrollToContent(message.data.content_position);
+                        }
+                        break;
+                }
+            }
+        };
+
+        SimplybookWidget.prototype.setSettings = function () {
+            var win = this.frame.contentWindow || this.frame;
+
+            var postData = {
+                'update_config': true,
+                'update_theme_vars': true,
+                'rerender': this.options.navigate === null,
+                'theme_vars': this.options.theme_settings,
+                'config_vars': this.options.app_config,
+            };
+
+            if(this.options.navigate){
+                postData['navigate'] = this.options.navigate;
+                this.options.navigate = null;
+            }
+
+            if(this.options.reviews_count || this.options.hide_add_reviews){
+                postData['reviews_vars'] = {
+                    "reviews_count": this.options.reviews_count,
+                    "hide_add_reviews": parseInt(this.options.hide_add_reviews)
+                };
+            }
+
+            win.postMessage(postData, '*');
+        };
+
+        SimplybookWidget.prototype.navigate = function (to) {
+            var win = this.frame.contentWindow || this.frame;
+
+            win.postMessage({
+                'navigate': to
+            }, '*');
+        };
+
+        SimplybookWidget.prototype.scrollToContent = function (contentPos) {
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            var iframePosition = this.frame.getBoundingClientRect();
+
+            var top = scrollTop + iframePosition.top + contentPos;
+
+            if (scrollTop > top) {
+                window.scrollTo(0, top);
+            }
+        };
+
+        SimplybookWidget.prototype.changeModalPosition = function (listenerId) {
+            if (this.modalsPositions[listenerId]) {
+                window.scrollTo(0, this.modalsPositions[listenerId]);
+            }
+
+            var win = this.frame.contentWindow || this.frame;
+
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            var iframePosition = this.frame.getBoundingClientRect();
+
+            var top = scrollTop + iframePosition.top;
+            var scrollTo = scrollTop - top;
+
+            win.postMessage({
+                'update_modal_position': true,
+                'listener_id': listenerId,
+                'top': Math.max(scrollTo, 0)
+            }, '*');
+        };
+
+        SimplybookWidget.prototype.saveModalPosition = function (listenerId) {
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            this.modalsPositions[listenerId] = scrollTop;
+        };
+
+        SimplybookWidget.prototype.updatePositionAfterModal = function (listenerId) {
+            if (this.modalsPositions[listenerId]) {
+                window.scrollTo(0, this.modalsPositions[listenerId]);
+            }
+        };
+
+        SimplybookWidget.prototype.getUrl = function () {
+            var widget_type = this.options.widget_type;
+            if (widget_type == 'contact-button') {
+                widget_type = 'button';
+            }
+
+            var url = this.options.url + '/v2/?widget-type=' + widget_type + '&theme=' + this.options.theme;
+            if (this.options.theme) {
+                url += '&theme=' + this.options.theme;
+            }
+            if (this.options.theme_id) {
+                url += '&theme_id=' + this.options.theme_id;
+            }
+            if (this.options.timeline) {
+                url += '&timeline=' + this.options.timeline;
+            }
+            if (this.options.datepicker) {
+                url += '&datepicker=' + this.options.datepicker;
+            }
+            if (this.options.is_rtl) {
+                url += '&is_rtl=1';
+            }
+            if (this.options.widget_user_class) {
+                url += '&class=' + this.options.widget_user_class;
+            }
+            return url;
+        };
+
+        SimplybookWidget.prototype.subscribeMessages = function () {
+            var instance = this;
+            window.addEventListener("message", function (data) {
+                instance.onReceiveMessage(data);
+            }, false);
+        };
+
+        // iframe widget methods
+        SimplybookWidget.prototype.updateWidgetSize = function (data) {
+            if (this.options.widget_type !== 'iframe' && this.options.widget_type !== 'reviews') {
+                return;
+            }
+            this.frame.height = data.height;
+        };
+
+        SimplybookWidget.prototype.displayIframe = function () {
+            document.write(
+                '<iframe scrolling="no" class="sb-widget-iframe" width="100%" border="0" frameborder="0" src="' + this.getUrl() + '" name="' + this.name + '" id="' + this.name + '"></iframe>'
+            );
+            this.frame = document.getElementById(this.name);
+
+            this.subscribeMessages();
+        };
+
+        // button widget methods
+        SimplybookWidget.prototype.addButton = function () {
+            this.addButtonWidgetStyles();
+
+            var btn;
+            if (this.options.button_custom_id) {
+                btn = document.getElementById(this.options.button_custom_id);
+            } else {
+                btn = this.getButtonNode();
+            }
+
+            var instance = this;
+            btn.addEventListener('click', function () {
+                instance.showPopupFrame('book');
+            });
+
+            if(!this.options.button_custom_id) {
+                document.body.appendChild(btn);
+            }
+        };
+
+        SimplybookWidget.prototype.addContactButton = function () {
+            this.addButtonWidgetStyles();
+
+            var btn;
+            if (this.options.button_custom_id) {
+                btn = document.getElementById(this.options.button_custom_id);
+            } else {
+                btn = this.getButtonNode();
+            }
+
+            var instance = this;
+            btn.addEventListener('click', function () {
+                instance.showPopupFrame('contact-widget');
+            });
+
+            if(!this.options.button_custom_id) {
+                document.body.appendChild(btn);
+            }
+        };
+
+        SimplybookWidget.prototype.getButtonNode = function () {
+            this.btn = document.createElement('div');
+            this.btnLabel = document.createElement('div');
+            this.btnLabel.innerText = this.options.button_title;
+
+            this.btn.appendChild(this.btnLabel);
+
+            this.updateButtonStyles();
+
+            return this.btn;
+        };
+
+        SimplybookWidget.prototype.updateButtonStyles = function (options) {
+            if (!this.btn) {
+                return;
+            }
+            if (options) {
+                this.options.button_position = options.button_position;
+                this.options.button_background_color = options.button_background_color;
+                this.options.button_text_color = options.button_text_color;
+                this.options.button_position_offset = options.button_position_offset;
+                this.options.button_title = options.button_title;
+            }
+
+            this.btn.className = 'simplybook-widget-button ' + this.options.button_position;
+            this.btn.style.backgroundColor = this.options.button_background_color;
+            this.btn.style.color = this.options.button_text_color;
+            if (this.options.button_position === 'top' || this.options.button_position === 'bottom') {
+                this.btn.style.right = this.options.button_position_offset;
+                this.btn.style.bottom = '';
+            } else {
+                this.btn.style.bottom = this.options.button_position_offset;
+                this.btn.style.right = '';
+            }
+            this.btnLabel.innerText = this.options.button_title;
+        };
+
+        SimplybookWidget.prototype.resetWidget = function (options) {
+            this.options = options;
+
+            this.updateButtonStyles(options);
+
+            this.container = null;
+            this.frame = null;
+        };
+
+        SimplybookWidget.prototype.showPopupFrame = function (navigateTo) {
+            if (navigateTo === undefined) {
+                navigateTo = 'book';
+            }
+
+            if (!this.container) {
+                this.container = document.createElement('div');
+                this.container.className = 'simplybook-widget-container active';
+
+                this.options.navigate = navigateTo;
+                this.container.appendChild(this.getIframeNode());
+
+                document.body.appendChild(this.container);
+            } else {
+                this.container.className = 'simplybook-widget-container active';
+                this.navigate(navigateTo);
+            }
+
+            this.showOverlay();
+        };
+
+        SimplybookWidget.prototype.closePopup = function () {
+            this.hideOverlay();
+            this.container.className = 'simplybook-widget-container';
+        };
+
+        SimplybookWidget.prototype.showOverlay = function () {
+            if (!this.overlay) {
+                this.overlay = document.createElement('div');
+                this.overlay.className = 'simplybook-widget-overlay';
+
+                var instance = this;
+                this.overlay.addEventListener('click', function () {
+                    instance.closePopup();
+                });
+            }
+
+            document.body.appendChild(this.overlay);
+
+            var instance = this;
+            // to show animated appear
+            setTimeout(function () {
+                instance.overlay.className = instance.overlay.className + ' active';
+            }, 10);
+        };
+
+        SimplybookWidget.prototype.hideOverlay = function () {
+            if (this.overlay) {
+                this.overlay.className = 'simplybook-widget-overlay';
+
+                var instance = this;
+                setTimeout(function () {
+                    document.body.removeChild(instance.overlay);
+                }, 300);
+            }
+        };
+
+        SimplybookWidget.prototype.addButtonWidgetStyles = function () {
+            var link = document.createElement('link');
+            link.setAttribute('rel', 'stylesheet');
+            link.setAttribute('type', 'text/css');
+            link.setAttribute('href', this.options.url + '/v2/widget/widget.css');
+
+            document.getElementsByTagName('head')[0].appendChild(link);
+        };
+
+        SimplybookWidget.prototype.getIframeNode = function () {
+            if (!this.frame) {
+                this.frame = document.createElement('iframe');
+                this.frame.border = '0';
+                this.frame.frameBorder = '0';
+                if (this.options.widget_type == 'iframe') {
+                    this.frame.scrolling = 'no';
+                }
+                this.frame.name = this.name;
+                this.frame.id = this.name;
+                this.frame.src = this.getUrl();
+
+                this.subscribeMessages();
+            }
+
+            return this.frame;
+        };
+    </script>
+    <script>var widget = new SimplybookWidget({"widget_type":"button","url":"https:\/\/prikundnani.simplybook.me","theme":"hugo","theme_settings":{"timeline_hide_unavailable":"1","hide_past_days":"0","timeline_show_end_time":"0","timeline_modern_display":"as_slots","nav_bg_color":"#ffffff","sb_base_color":"#e6f2fe","display_item_mode":"block","body_bg_color":"#ffffff","sb_review_image":"1","sb_review_image_preview":"\/uploads\/prikundnani\/image_files\/preview\/bc33ece85ab3a3f2015940f85c5a0ff9.png","dark_font_color":"#173b6c","light_font_color":"#353f5e","sb_company_label_color":"#ffffff","hide_img_mode":"0","show_sidebar":"1","sb_busy":"#f29a6a","sb_available":"#d3e0f1"},"timeline":"modern","datepicker":"top_calendar","is_rtl":false,"app_config":{"allow_switch_to_ada":0,"predefined":[]},"button_title":"Book now","button_background_color":"#007aff","button_text_color":"#ffffff","button_position":"right","button_position_offset":"55%"});</script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="d-flex flex-column">
+      <div class="container-3">
+        <div class="btn btn-three" onclick="book_simulate()">
+          <p style="font-size: 18px; transform: translateY(-5px);" >Book Free Consultation</p>
+        </div>
+      </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= Test Section ======= -->
+    <!-- <div class="container" style="background-color: black; padding: 0; margin: 0;">
+      <div class="col-md-8" style="height: 50px;">
+        <h1>here</h1>
+      </div>
+      <div class="col-md-4" style="height: 50px;">
+
+      </div>
+
+    </div> -->
+    <!-- ======= End Test Section ======= -->
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about" style="">
+      <div class="container" style="">
+
+        
+
+        <div class="row">
+          
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left" style=" padding: 100px;">
+            <div class="section-title">
+              <br>
+              <h2>About</h2>
+              <p>Priyanshu Kundnani is a full stack web developer that handles the designing, construction and maintenance of online enterprise infrastructures. His background in software development, visual design and networking inform his mindful but competitive approach. 
+              </p>
+            </div>
+            <h3>Full Stack Web Developer</h3>
+            <p class="fst-italic">
+              When customers give me their projects they can expect a high quality return and consistent support during the site's maintenance.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>26 September 2003</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+61 0452 330 300</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Sydney, NSW </span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>18</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Education:</strong> <span>Self-Taught and Online</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+            </div>
+            <p>
+               I specialises in backend development and can make custom features for your website such as custom booking systems, enquiry boxes, live chats, dynamic availabilities and a lot more.
+            </p>
+            <p>
+              I have worked with all types of clients and I look forward to working with you!  
+            </p>
+          </div>
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="{% static 'assets/img/profile-pfp.png' %}" class="img-fluid" alt="">
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Facts Section ======= -->
+    <!-- <section id="facts" class="facts">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Facts</h2>
+          <p>Customer satisfaction is always the end goal. </p>
+        </div>
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Happy Clients</strong> consequuntur quae</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Projects</strong> adipisci atque cum quia aut</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="count-box">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="count-box">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hard Workers</strong> rerum asperiores dolor</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>End Facts Section -->
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Every project is given the full attention that it needs. </p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+          </div>
+        </div>
+        
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+          {% for website in websites %}
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap" onclick="window.location='/flex/{{website.abbreviation}}'">
+              <img src="{{website.screenshot}}" class="img-fluid" alt="" >
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Book a free consultation to get a quote for your specific situation.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon"><i class="bi bi-briefcase"></i></div>
+            <h4 class="title"><a href="">Website Development</a></h4>
+            <p class="description">A well designed website is crucial to increase traffic to your business as "Poor user experience drives almost 50% of users to go with competitors instead" says <i>fitsmallbusiness.com</i> </p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="bi bi-card-checklist"></i></div>
+            <h4 class="title"><a href="">Logo & Branding</a></h4>
+            <p class="description">So, why is a logo important? Because it grabs attention, makes a strong first impression, is the foundation of your brand identity, is memorable, separates you from competition, fosters brand loyalty, and is expected by your audience.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="bi bi-bar-chart"></i></div>
+            <h4 class="title"><a href="">SEO</a></h4>
+            <p class="description">Users trust search engines, and achieving a top spot in search engine rankings signals to searchers that your site is a credible source. The higher you rank in results pages, the more clicks and traffic your site will generate.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><i class="bi bi-binoculars"></i></div>
+            <h4 class="title"><a href="">E Commerce</a></h4>
+            <p class="description">An ecommerce system provides real time data and analytics about your products and your customers. You can see how people interact with the site, what products interest them, what they left in their cart and how much the average purchase was. Valuable metrics that allow you to make adjustments to meet your customer’s needs.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon"><i class="bi bi-brightness-high"></i></div>
+            <h4 class="title"><a href="">Enterprise Infrastructures</a></h4>
+            <p class="description">By having a centralised database of your products, pricing, and customers, you can quickly find the products, assign the order to a customer, and apply discounts with little effort. If you are using a barcode scanner, the process is even faster.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+            <h4 class="title"><a href="">Maintenance</a></h4>
+            <p class="description">Regularly updating and maintaining your site is crucial to ensuring that your site is running at full capacity. Just like cars, websites require maintenance to operate properly. Properly maintaining your site helps to ensure site security, increase the number of new visitors, boost returning traffic, and more.</p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+    
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>When working with me, customers don't need to worry about the technical side of the project they only need to effectively communicate their vision of the experience their site visitors should have when viewing the website.</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val">99%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">89%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">Custom Graphic Design <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Django Web Framework <i class="val">98%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">3rd Party APIs <i class="val">78%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <!-- <div class="section-title">
+          <h2>Resume</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div> -->
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Summary</h3>
+            <div class="resume-item pb-0">
+              <h4>Pri</h4>
+              <p><em>Innovative and self-driven Web Developer with 3+ years of experience designing and developing user-centered online infrastructure from initial concept to final, polished deliverable.</em></p>
+              <ul>
+                <li>Sydney, NSW</li>
+                <li>0452 330 300</li>
+                <li>pri.kundnani03@gmail.com</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>UNSW COMPSCI (HS1917)</h4>
+              <h5>2019</h5>
+              <p><em>Online</em></p>
+              <p><ul>
+                <li>
+                  Software Development Cycle
+                </li>
+                <li>
+                  Social and Ethical Education
+                </li>
+                <li>
+                  Programming Fundamentals
+                </li>
+                <li>
+                  Advanced Algorithms
+                </li>
+              </ul></p>
+            </div>
+            <div class="resume-item">
+              <h4>Specialisation &amp; Django Web Framework</h4>
+              <h5>2010 - 2014</h5>
+              <p><em>Pluralsight - Codeschool</em></p>
+              <ul>
+                <li>Networking fundamentals</li>
+                <li>Database Development </li>
+                <li>Server Maintenance</li>
+                <li>SEO skills</li>
+              </ul></div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Freelance Web Development</h4>
+              <h5>2019 - Present</h5>
+              <p><em>Sydney, NSW </em></p>
+              <ul>
+                <li>Liaising with various demographics</li>
+                <li>Designing websites from scratch </li>
+                <li>Building custom websites</li>
+                <li>SEO and Marketing</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Yourweb</h4>
+              <h5>2021 - Present</h5>
+              <p><em>Campbelltown, NSW</em></p>
+              <ul>
+                <li>Founded the partnership</li>
+                <li>Was the lead web developer</li>
+                <li>Designing experience</li>
+                <li>Customer Service</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Testimonials</h2>
+          <p>Client satisfaction is the number one priority.</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+            {% for testimony in testimonies %}
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  {{testimony.content}}
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <h3>{{testimony.author}}</h3>
+                <h4>{{testimony.author_title}}</h4>
+              </div>
+            </div><!-- End testimonial item -->
+            {% endfor %}
+            
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Sydney, NSW</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>pri.kundnani03@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+61 0452 330 300</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d424146.10282421886!2d150.65178800037788!3d-33.84735668745214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129838f39a743f%3A0x3017d681632a850!2sSydney%20NSW!5e0!3m2!1sen!2sau!4v1638524955526!5m2!1sen!2sau" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="/enquiry/success/" method="post" class="php-email-form">
+              {%csrf_token%}
+              <input style="display: none;" type='text' name='type' value='enquiry'>
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+    <section id="blog" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Blog</h2>
+          <p>Stay up to date with Pri Kundnani. Subscribe to the newsletter.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            
+          </div>
+        </div>
+        {% for blog_post in blog_posts %}
+        <div class="blog-post" style="background-color: white; padding: 30px 20px;">
+          <h2>{{blog_post.title}}</h2>
+          <div class="row">
+            <h5 class = "col-md-6" style="display: inline;">{{blog_post.subtitle}}</h5><p class = "col-md-4"></p><p class = "col-md-2" style="display: inline;">{{blog_post.datetime}}</p>
+            
+          </div>
+          <p>{{blog_post.content}}</p>
+        </div>
+        {% endfor %}
+        
+        
+      </div>
+    </section><!-- End Portfolio Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <!-- <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Pri Kundnani</span></strong>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+      </div>
+    </div>
+  </footer> -->
+  <!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/purecounter/purecounter.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/typed.js/typed.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
+  <!-- <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script> -->
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script src="{% static 'assets/vendor/navbar.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+  <!-- Simulate button click on book now -->
+  <script>
+    book_now_button = document.querySelector('.simplybook-widget-button');
+    book_now_button.style.opacity = '1%';
+    window.onscroll = function(){setTimeout(function(){ book_now_button.style.opacity = '100%'; }, 3000);}
+    function book_simulate(){
+      $(book_now_button).click()
+    }
+    
+    
+  </script>
+
+</body>
+
+</html>
