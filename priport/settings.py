@@ -27,8 +27,15 @@ SECRET_KEY = 'django-insecure-h$e91e%m@i1j*f%*-4%%fn=!&%mtjsuadcivr*1_p19&_o8_2c
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['kundnani-portfolio.herokuapp.com', 'localhost', '127.0.0.1', 'www.yourweb.sydney']
+ALLOWED_HOSTS = ['kundnani-portfolio.herokuapp.com', 'localhost', '127.0.0.1', 'www.yourweb.sydney', 'yourweb.sydney']
 
+# Experimental shit
+SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+PREPEND_WWW = True
+BASE_URL = "https://www.yourweb.sydney"
 
 # Application definition
 
