@@ -25,3 +25,6 @@ def flex_view(request, *args, **kwargs):
     }
     
     return render(request, 'portfolio-details.html', context)
+
+def sitemap_view(request):
+    return render(request, 'sitemap.xml', {})

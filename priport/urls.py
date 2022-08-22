@@ -19,11 +19,12 @@ from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
 
-from general.views import home_view, flex_view
+from general.views import home_view, flex_view, sitemap_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home_view),
     path('flex/<str:abbreviation>/', flex_view),
-    path('enquiry/success/', home_view)
+    path('enquiry/success/', home_view),
+    path('sitemap/', sitemap_view)
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
