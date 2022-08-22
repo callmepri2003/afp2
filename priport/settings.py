@@ -29,13 +29,13 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['kundnani-portfolio.herokuapp.com', 'localhost', '127.0.0.1', 'www.yourweb.sydney', 'yourweb.sydney', '*']
 
-# Experimental shit
-SECURE_SSL_REDIRECT = True
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-PREPEND_WWW = True
-BASE_URL = "https://www.yourweb.sydney"
+# SSL shit to make sure it's always SSL mfeR FK 
+# SECURE_SSL_REDIRECT = True
+# SESSION_COOKIE_SECURE = True
+# CSRF_COOKIE_SECURE = True
+# SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+# PREPEND_WWW = True
+# BASE_URL = "https://www.yourweb.sydney"
 
 # Application definition
 
